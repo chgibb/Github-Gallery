@@ -85,7 +85,7 @@ class App extends React.Component
           for(let k = 0; k != URLs.length; ++k)
             galleryURLs.push({repoURL : repos[i].html_url,imgURL : URLs[k]});
 
-          this.setState({ galleryURLs: this.state.galleryURLs.concat(galleryURLs) });
+          this.setState({galleryURLs: this.state.galleryURLs.concat(galleryURLs)});
         }
       }
     });
