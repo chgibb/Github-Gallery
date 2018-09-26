@@ -14,13 +14,16 @@ export interface SearchBoxProps
     onSearchResults : (res : Array<SearchResult>) => void;
 }
 
-export class SearchBox extends React.Component<SearchBoxProps> {
+export class SearchBox extends React.Component<SearchBoxProps> 
+{
     public timer : NodeJS.Timer;
-    public constructor(props : SearchBoxProps) {
+    public constructor(props : SearchBoxProps)
+    {
         super(props);
     }
 
-    public render() {
+    public render()
+    {
         return (
             <div>
                 <input type="text" placeholder="Search for Users and Orgs" autoFocus={true} onFocus={this.searchUpdated} onChange={this.searchUpdated} />
@@ -34,7 +37,7 @@ export class SearchBox extends React.Component<SearchBoxProps> {
         {
             clearTimeout(this.timer);
         }
-        this.timer = setTimeout(async () =>{
+        this.timer = setTimeout(async () => {
             try
             {
                 let q = event.target.value;
