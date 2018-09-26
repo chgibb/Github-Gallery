@@ -42,7 +42,7 @@ class App extends React.Component
                 return;
               return (
                 <div>
-                  <a href={res.repoURL} target="_blank"><img key={res.imgURL} src={res.imgURL} className="activeHover"></img></a><br />
+                  <a href={res.repoURL} target="_blank"><img key={res.imgURL} src={res.imgURL} className="activeHover"></img></a>
                 </div>
               )
             })
