@@ -23,7 +23,7 @@ export class SearchBox extends React.Component<SearchBoxProps> {
     public render() {
         return (
             <div>
-                <input type="text" autoFocus={true} onFocus={this.searchUpdated} onChange={this.searchUpdated} />
+                <input type="text" placeholder="Search for Users and Orgs" autoFocus={true} onFocus={this.searchUpdated} onChange={this.searchUpdated} />
             </div>
         )
     }
