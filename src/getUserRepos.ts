@@ -26,6 +26,13 @@ async function getUserReposByPage(user : SearchResult,page : number) : Promise<A
     });
 }
 
+/**
+ * Returns a generator which can be pumped to retrieve a user's public repositories
+ *
+ * @export
+ * @param {SearchResult} user
+ * @returns
+ */
 export async function* getUserRepos(user : SearchResult)
 {
     for(let i = 1; i != 100; ++i)

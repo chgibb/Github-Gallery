@@ -1,3 +1,10 @@
+/**
+ * Returns an array of image URLs extracted from the given text
+ *
+ * @export
+ * @param {string} text
+ * @returns {Array<string>}
+ */
 export function getImageURLs(text: string): Array<string>
 {
     let res = new Array<string>();
